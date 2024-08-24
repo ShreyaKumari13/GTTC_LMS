@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="./dashboard.html"><img src="./img/GTTC-Lgo-for web.png" alt="GTTC Logo" class="logo"></a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class='bx bx-menu'></i>
+        </div>
+        <div class="nav-list">
+            <div class="dropdown">
+                <a class="line" href="#">Create</a><i class='bx bx-chevron-down' id="down"></i>
+                <div class="dropdown-content">
+                    <a class="line" href="./createcourse.html">Create Course</a>
+                    <a class="line" href="./addcourse.html">Add Subject</a>
+                    <a class="line" href="./uploadvideo.html">Upload Video</a>
+                    <a class="line" href="./createmock.html">Mock Test</a>
+                </div>
+            </div>
+            <div>
+                <div class="dropdown">
+                    <a class="line" href="#">Update</a><i class='bx bx-chevron-down' id="down"></i>
+                    <div class="dropdown-content">
+                        <a class="line" href="./editsubject.html">Subject</a>
+                        <a class="line" href="./editvideo.html">Video</a>
+                        <a class="line" href="./edittest.html">Test</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="line" href="#" class="dropbtn">Subscriptions</a><i class='bx bx-chevron-down' id="down"></i>
+                <div class="dropdown-content">
+                    <a class="line" href="./paid.html">Paid Users</a>
+                    <a class="line" href="./free.html">Free Users</a>
+                </div>
+            </div>
+            <a class="line" href="./Revenue.html">Revenue Chart</a>
+            <div class="logout">
+                <span style="cursor: pointer;"><img src="./img/logout.jpeg" alt="Logout"></span>
+                <span class="logoutext"><a class="line" href="index.html">Logout</a></span>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="contain">
+            <div class="top">
+                <div class="sub">
+                    Edit Subject
+                </div>
+            </div>
+            <div class="container">
+                <div class="form">
+                    <form id="edit-form">
+                        <div class="labels">
+                            <label for="subject">Subject Name:</label>
+                            <label for="type">Type:</label>
+                            <label for="course">Course:</label>
+                            <label for="description">Description:</label>
+                        </div>
+                        <div class="inp">
+                            <input type="text" id="subject" name="subject"><br>
+    
+    
+                            <input type="text" id="type" name="type"><br>
+    
+    
+                            <input type="text" id="course" name="course"><br>
+    
+    
+                            <textarea id="description" name="description"></textarea><br>
+    
+                            <input type="submit" placeholder="Save Changes">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

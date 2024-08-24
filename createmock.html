@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Course</title>
+    <link rel="stylesheet" href="./css/createmock.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="./img/GTTC-Lgo-for web.png" alt="GTTC Logo" class="logo">
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="nav-list">
+                <div class="dropdown">
+                    <a class="line" href="#">Create</a><i class='bx bx-chevron-down' id="down"></i>
+                    <div class="dropdown-content">
+                        <a class="line" href="./createcourse.html">Create Course</a>
+                        <a class="line" href="./addcourse.html">Add Subject</a>
+                        <a class="line" href="./uploadvideo.html">Upload Video</a>
+                        <a class="line" href="./createmock.html">Mock Test</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="dropdown">
+                        <a class="line" href="#">Update</a><i class='bx bx-chevron-down' id="down"></i>
+                        <div class="dropdown-content">
+                            <a class="line" href="./editsubject.html">Subject</a>
+                            <a class="line" href="./editvideo.html">Video</a>
+                            <a class="line" href="./edittest.html">Test</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="line" href="#" class="dropbtn">Subscriptions</a><i class='bx bx-chevron-down' id="down"></i>
+                    <div class="dropdown-content">
+                        <a class="line" href="./paid.html">Paid Users</a>
+                        <a class="line" href="./free.html">Free Users</a>
+                    </div>
+                </div>
+                <a class="line" href="./Revenue.html">Revenue Chart</a>
+                <div class="logout">
+                    <span style="cursor: pointer;"><img src="./img/logout.jpeg" alt="Logout"></span>
+                    <span class="logoutext"><a class="line" href="index.html">Logout</a></span>
+                </div>
+            </div>
+        </nav>
+</header>
+    <div class="wrapper">
+        <div class="main">
+            <div class="create">
+                <div class="CC">
+                    Create Mock Test
+                </div>
+                <div class="fourdivmain">
+                    <div class="fourdiv">
+                        <div class="first">
+                            <div class="name">
+                                <label for="coursename">Test Name</label>
+                                <input type="text" id="coursename" placeholder="Enter Test Name">
+                            </div>
+                            <div class="marks">
+                                <label for="coursename">Marks</label>
+                                <input type="number" min="0" id="coursename" placeholder="Enter Marks Per Question">
+                            </div>
+                        </div>
+                        <div class="second">
+                            
+                            <div class="desc">
+                                <label for="coursedesc">Test Description</label>
+                            <textarea id="coursedesc" cols="18" placeholder="Enter Test Description..."></textarea>
+                            </div>
+                            <div class="marks">
+                                <label for="coursename">-Ve Marks</label>
+                                <input type="number" min="0"  id="coursename" placeholder="Enter -Ve Marks Per Question">
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <!-- <button>ADD</button> -->
+                             <input type="submit" value="CREATE" onclick="showPopup()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h3>Test Added!</h3>
+                <p>Do you want to add questions now?</p>
+                <button class="Yes" onclick="addQuestions()">Yes, now.</button>
+                <button class="No" onclick="closePopup()">No, Later.</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./js/script.js"></script>
+    <script>
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+        function addQuestions() {
+            window.location.href = './addquestions.html'; // replace with the actual path to add questions page
+        }
+    </script>
+</body>
+
+</html>

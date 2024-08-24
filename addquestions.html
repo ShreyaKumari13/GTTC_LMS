@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paid Users</title>
+    <link rel="stylesheet" href="./css/addquestions.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    
+    <nav id="navbar">
+        <div id="logo">
+            <a href="./dashboard.html"><img src="./img/GTTC-Lgo-for web.png" alt="GTTC Logo" class="logo"></a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class='bx bx-menu'></i>
+        </div>
+        <div class="nav-list">
+            <div class="dropdown">
+                <a class="line" href="#">Create</a><i class='bx bx-chevron-down' id="down"></i>
+                <div class="dropdown-content">
+                    <a class="line" href="./createcourse.html">Create Course</a>
+                    <a class="line" href="./addcourse.html">Add Subject</a>
+                    <a class="line" href="./uploadvideo.html">Upload Video</a>
+                    <a class="line" href="./createmock.html">Mock Test</a>
+                </div>
+            </div>
+            <div>
+                <div class="dropdown">
+                    <a class="line" href="#">Update</a><i class='bx bx-chevron-down' id="down"></i>
+                    <div class="dropdown-content">
+                        <a class="line" href="./editsubject.html">Subject</a>
+                        <a class="line" href="./editvideo.html">Video</a>
+                        <a class="line" href="./edittest.html">Test</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="line" href="#" class="dropbtn">Subscriptions</a><i class='bx bx-chevron-down' id="down"></i>
+                <div class="dropdown-content">
+                    <a class="line" href="./paid.html">Paid Users</a>
+                    <a class="line" href="./free.html">Free Users</a>
+                </div>
+            </div>
+            <a class="line" href="./Revenue.html">Revenue Chart</a>
+            <div class="logout">
+                <span style="cursor: pointer;"><img src="./img/logout.jpeg" alt="Logout"></span>
+                <span class="logoutext"><a class="line" href="index.html">Logout</a></span>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="center">
+            <div class="first">
+                <div class="user-card">
+                    <div class="user-info">
+                        <div id="question-container">
+                            <div class="qa-block">
+                                <label for="question1" class="question-label">Question 1:</label> <i class='bx bx-trash delete-icon'></i>
+                                <input type="text" id="question1" name="question1" placeholder="Enter your question">
+                                <div class="option-block">
+                                    <label>Options:</label>
+                                    <input type="radio" name="correct1" value="option1"> <input type="text" name="question1_option1" placeholder="Option 1">
+                                    <input type="radio" name="correct1" value="option2"> <input type="text" name="question1_option2" placeholder="Option 2">
+                                    <input type="radio" name="correct1" value="option3"> <input type="text" name="question1_option3" placeholder="Option 3">
+                                    <input type="radio" name="correct1" value="option4"> <input type="text" name="question1_option4" placeholder="Option 4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="addsave">
+                <div class="add">
+                    <button class="view-details" id="add-btn">Add Question</button>
+                </div>
+                <div class="save">
+                    <button class="view-details" id="save-btn">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/name.js"></script>
+    <script src="./js/addq.js"></script>
+</body>
+</html>

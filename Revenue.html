@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue_Chart</title>
+    <link rel="stylesheet" href="./css/revenue.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="./dashboard.html"><img src="./img/GTTC-Lgo-for web.png" alt="GTTC Logo" class="logo"></a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class='bx bx-menu'></i>
+        </div>
+        <div class="nav-list">
+            <div class="dropdown">
+                <a class="line" href="#">Create</a><i class='bx bx-chevron-down' id="down"></i>
+                <div class="dropdown-content">
+                    <a class="line" href="./createcourse.html">Create Course</a>
+                    <a class="line" href="./addcourse.html">Add Subject</a>
+                    <a class="line" href="./uploadvideo.html">Upload Video</a>
+                    <a class="line" href="./createmock.html">Mock Test</a>
+                </div>
+            </div>
+            <div>
+                <div class="dropdown">
+                    <a class="line" href="#">Update</a><i class='bx bx-chevron-down' id="down"></i>
+                    <div class="dropdown-content">
+                        <a class="line" href="./editsubject.html">Subject</a>
+                        <a class="line" href="./editvideo.html">Video</a>
+                        <a class="line" href="./edittest.html">Test</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="line" href="#" class="dropbtn">Subscriptions</a><i class='bx bx-chevron-down' id="down"></i>
+                <div class="dropdown-content">
+                    <a class="line" href="./paid.html">Paid Users</a>
+                    <a class="line" href="./free.html">Free Users</a>
+                </div>
+            </div>
+            <a class="line" href="./Revenue.html">Revenue Chart</a>
+            <div class="logout">
+                <span style="cursor: pointer;"><img src="./img/logout.jpeg" alt="Logout"></span>
+                <span class="logoutext"><a class="line" href="index.html">Logout</a></span>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="top">
+            <div class="rev">
+                <span><strong>Revenue Chart</strong></span>
+            </div>
+        </div>
+        <div class="chartmain">
+            <div class="chart">
+                <div class="chart-container">
+                    <canvas id="myChart"></canvas>
+                    <div class="buttons">
+                        <button id="week">Week</button>
+                        <button id="month">Month</button>
+                        <button id="year">Year</button>
+                    </div>
+                </div>
+            </div>
+            <div class="print">
+                <button id="print">PRINT</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Include Chart.js from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/chart.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

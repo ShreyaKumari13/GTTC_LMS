@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0E2947;
+    overflow: hidden;
+}
+
+.nav{
+    /* height: 105px; */
+    height: 13vh;
+    background-color: #EEF4FD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 16px;
+}
+
+.logo{
+    width: 96px;
+    height: 105px;
+    /* margin-right: 243px;
+    margin-left: 126px;  */
+    position: absolute;
+    left: 126px;
+}
+
+.nav h1{
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Open Sans',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+
+/* @media (max-width: 480px) {
+    .nav h1 {
+        font-size: 18px;
+    }
+} */
+
+/* .card{
+    background-color: #EEF4FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 176px;
+    position: absolute;
+    left: 520px;
+    height: 504px;
+    width: 443.8px;
+    border-radius: 20px;
+}
+
+.card p{
+    text-align: center;
+} */
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 83vh;
+    
+}
+
+.card{
+    width: 443px;
+    /* height: 504px; */
+    background-color: #EEF4FD; 
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.card h1{
+    font-size: 31px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Open Sans',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+.card .inputbox{
+    width: 100%;
+    height: 50px;
+    /* background-color: aqua; */
+    margin: 30px 0;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.card input{
+    width: 286px;
+    height: 50px;
+    /* background: transparent; */
+    border: none;
+    outline: none;
+    border: 2px solid rgba(80, 80, 80, 0.2);
+    border-radius: 40px;
+    margin-left: 53px;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+}
+
+.inputbox input::placeholder{
+    color: #0E2947;
+}
+
+.inputbox i{
+    position: absolute;
+    right: 55px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.card .forgot{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 65px;
+    margin-bottom: 20px;
+}
+
+.forgot a{
+    color: #0E2947;
+    text-decoration: none;
+}
+
+.forgot a:hover{
+    text-decoration: underline;
+}
+
+.card .btn{
+    width: 150px;
+    height: 50px;
+    background-color: #0E2947;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    /* margin-left: 118px; */
+    /* margin-top: 50px; */
+    position: relative;
+    top: 20px;
+    left: 120px;
+    border-radius: 10px;
+    text-align: center;
+   
+}
+
+.card .btn:hover{
+    cursor: pointer;
+}
+
+.inputbox #eye:hover{
+    cursor: pointer;
+}
+
+a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: -1px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: #00A0E3;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0;
+  }
+
+  @media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 16px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .logo {
+        position: static;
+        margin: 0 auto 16px;
+    }
+
+    .nav h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+    .forgot a {
+        color: #0E2947;
+        text-decoration: none;
+        position: absolute;
+        left: 65px;
+    }
+    .card {
+        width: 360px;
+        /* height: 504px; */
+        background-color: #EEF4FD;
+        padding: 30px;
+        border-radius: 10px;
+    }
+    .card input {
+        width: 286px;
+        height: 50px;
+        /* background: transparent; */
+        border: none;
+        outline: none;
+        border: 2px solid rgba(80, 80, 80, 0.2);
+        border-radius: 40px;
+        margin-left: 6px;
+        font-size: 16px;
+        padding: 20px 45px 20px 20px;
+    }
+    .card .btn {
+        /* margin-left: 70px; */
+        left: 75px;
+        top: 20px;
+    }
+    .card h1{
+        font-size: 20px;
+    }
+    .inputbox i{
+        right: 20px;
+    }
+
+}

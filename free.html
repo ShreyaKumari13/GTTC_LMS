@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Users</title>
+    <link rel="stylesheet" href="./css/paid.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="./dashboard.html"><img src="./img/GTTC-Lgo-for web.png" alt="GTTC Logo" class="logo"></a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class='bx bx-menu'></i>
+        </div>
+        <div class="nav-list">
+            <div class="dropdown">
+                <a class="line" href="#">Create</a><i class='bx bx-chevron-down' id="down"></i>
+                <div class="dropdown-content">
+                    <a class="line" href="./createcourse.html">Create Course</a>
+                    <a class="line" href="./addcourse.html">Add Subject</a>
+                    <a class="line" href="./uploadvideo.html">Upload Video</a>
+                    <a class="line" href="./createmock.html">Mock Test</a>
+                </div>
+            </div>
+            <div>
+                <div class="dropdown">
+                    <a class="line" href="#">Update</a><i class='bx bx-chevron-down' id="down"></i>
+                    <div class="dropdown-content">
+                        <a class="line" href="./editsubject.html">Subject</a>
+                        <a class="line" href="./editvideo.html">Video</a>
+                        <a class="line" href="./edittest.html">Test</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="line" href="#" class="dropbtn">Subscriptions</a><i class='bx bx-chevron-down' id="down"></i>
+                <div class="dropdown-content">
+                    <a class="line" href="./paid.html">Paid Users</a>
+                    <a class="line" href="./free.html">Free Users</a>
+                </div>
+            </div>
+            <a class="line" href="./Revenue.html">Revenue Chart</a>
+            <div class="logout">
+                <span style="cursor: pointer;"><img src="./img/logout.jpeg" alt="Logout"></span>
+                <span class="logoutext"><a class="line" href="index.html">Logout</a></span>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="top">
+            <div class="empty">
+                
+            </div>
+            <div class="paiduser">
+                FREE USERS
+            </div>
+            <div class="sort">
+                <label for="time">Sort By:</label>
+                <select name="time" id="week">
+                    <option value="week">Week</option>
+                    <option value="Month">Month</option>
+                    <option value="year">Year</option>
+                </select>
+            </div>
+        </div>
+        <div class="center">
+            <div class="first">
+                <div class="user-card">
+                    <div class="user-info">
+                        <div class="user-logo" data-username="Asif Sheik"></div>
+                        <p><strong>Name:</strong> Asif Sheik</p>
+                        <p><strong>Email:</strong> Asif123@gmail.com</p>
+                        <p><strong>Course Joined:</strong> Full stack Development</p>
+                        <p><strong>DOJ:</strong> 01/05/2022</p>
+                    </div>
+                    <a href="./freedetails.html"><button class="view-details">View Details</button></a>
+                </div>
+                <div class="user-card">
+                    <div class="user-info">
+                        <div class="user-logo" data-username="Banana Sheik"></div>
+                        <p><strong>Name:</strong> Banana Sheik</p>
+                        <p><strong>Email:</strong> Asif123@gmail.com</p>
+                        <p><strong>Course Joined:</strong> Full stack Development</p>
+                        <p><strong>DOJ:</strong> 01/05/2022</p>
+                    </div>
+                    <a href="./freedetails.html"><button class="view-details">View Details</button></a>
+                </div>
+                <div class="user-card">
+                    <div class="user-info">
+                        <div class="user-logo" data-username="Cat Sheik"></div>
+                        <p><strong>Name:</strong> Cat Sheik</p>
+                        <p><strong>Email:</strong> Asif123@gmail.com</p>
+                        <p><strong>Course Joined:</strong> Full stack Development</p>
+                        <p><strong>DOJ:</strong> 01/05/2022</p>
+                    </div>
+                    <a href="./freedetails.html"><button class="view-details">View Details</button></a>
+                </div>
+            </div>
+            <div class="second">
+                <div class="user-card">
+                    <div class="user-info">
+                        <div class="user-logo" data-username="Dog Sheik"></div>
+                        <p><strong>Name:</strong> Dog Sheik</p>
+                        <p><strong>Email:</strong> Asif123@gmail.com</p>
+                        <p><strong>Course Joined:</strong> Full stack Development</p>
+                        <p><strong>DOJ:</strong> 01/05/2022</p>
+                    </div>
+                    <a href="./freedetails.html"><button class="view-details">View Details</button></a>
+                </div>
+                <div class="user-card">
+                    <div class="user-info">
+                        <div class="user-logo" data-username="Egg Sheik"></div>
+                        <p><strong>Name:</strong> Egg Sheik</p>
+                        <p><strong>Email:</strong> Asif123@gmail.com</p>
+                        <p><strong>Course Joined:</strong> Full stack Development</p>
+                        <p><strong>DOJ:</strong> 01/05/2022</p>
+                    </div>
+                    <a href="./freedetails.html"><button class="view-details">View Details</button></a>
+                </div>
+                <div class="user-card">
+                    <div class="user-info">
+                        <div class="user-logo" data-username="Fish Sheik"></div>
+                        <p><strong>Name:</strong> Fish Sheik</p>
+                        <p><strong>Email:</strong> Asif123@gmail.com</p>
+                        <p><strong>Course Joined:</strong> Full stack Development</p>
+                        <p><strong>DOJ:</strong> 01/05/2022</p>
+                    </div>
+                    <a href="./freedetails.html"><button class="view-details">View Details</button></a>
+                </div>
+            </div>
+            <div class="third">
+                <div class="user-card">
+                    <div class="user-info">
+                        <div class="user-logo" data-username="Grapes Sheik"></div>
+                        <p><strong>Name:</strong> Grapes Sheik</p>
+                        <p><strong>Email:</strong> Asif123@gmail.com</p>
+                        <p><strong>Course Joined:</strong> Full stack Development</p>
+                        <p><strong>DOJ:</strong> 01/05/2022</p>
+                    </div>
+                    <a href="./freedetails.html"><button class="view-details">View Details</button></a>
+                </div>
+                <div class="user-card">
+                    <div class="user-info">
+                        <div class="user-logo" data-username="Healthy Sheik"></div>
+                        <p><strong>Name:</strong> Healthy Sheik</p>
+                        <p><strong>Email:</strong> Asif123@gmail.com</p>
+                        <p><strong>Course Joined:</strong> Full stack Development</p>
+                        <p><strong>DOJ:</strong> 01/05/2022</p>
+                    </div>
+                    <a href="./freedetails.html"><button class="view-details">View Details</button></a>
+                </div>
+                <div class="user-card">
+                    <div class="user-info">
+                        <div class="user-logo" data-username="Ice Sheik"></div>
+                        <p><strong>Name:</strong> Ice Sheik</p>
+                        <p><strong>Email:</strong> Asif123@gmail.com</p>
+                        <p><strong>Course Joined:</strong> Full stack Development</p>
+                        <p><strong>DOJ:</strong> 01/05/2022</p>
+                    </div>
+                    <a href="./freedetails.html"><button class="view-details">View Details</button></a>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/name.js"></script>
+</body>
+</html>

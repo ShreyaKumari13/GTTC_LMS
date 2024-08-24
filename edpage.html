@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Subject</title>
+</head>
+<body>
+    <h1>Edit Subject</h1>
+    <form id="edit-form">
+        <label for="subject">Subject Name:</label>
+        <input type="text" id="subject" name="subject"><br>
+
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type"><br>
+
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course"><br>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea><br>
+
+        <button type="submit">Save Changes</button>
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            document.getElementById('subject').value = urlParams.get('subject');
+            document.getElementById('type').value = urlParams.get('type');
+            document.getElementById('course').value = urlParams.get('course');
+            document.getElementById('description').value = urlParams.get('description');
+            
+            document.getElementById('edit-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                // Handle form submission logic here, such as saving changes to a server
+                alert('Changes saved!');
+                window.location.href = './dashboard.html';
+            });
+        });
+    </script>
+</body>
+</html>

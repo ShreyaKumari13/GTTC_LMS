@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0E2947;
+    /* position: absolute; */
+}
+
+/* Start of Nav */
+.nav {
+    height: 80.4px;
+    background-color: #EEF4FD;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.logo {
+    width: 90px;
+    height: 100px;
+}
+
+#logo img {
+    margin-left: 11vh;
+    height: 110px;
+}
+
+.logoutext {
+    /* margin-left: -82px;  */
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    cursor: pointer;
+    color: #0E2947;
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.logout img {
+    width: 30.4px;
+    height: 30.4px;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #0E2947;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin-left: 6vh;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0E2947;
+    font-size: large;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a i {
+    margin-top: 10px;
+}
+
+nav a #down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5px;
+    margin-bottom: -12px;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 115px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+    top: 23px;
+    left: -5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #0E2947;
+}
+
+.dropdown-content a:hover {
+    background-color: #EEF4FD;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.logoutext {
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    cursor: pointer;
+    color: #0E2947;
+    margin-right: 3.0vw;
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+}
+
+.logout img {
+    width: 30.4px;
+    height: 30.4px;
+}
+
+#navbar {
+    height: 12vh;
+    background-color: #EEF4FD;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#active{
+    border: 0.5px solid #00A0E3;
+    padding: 18px;
+    border-radius: 4px;
+}
+
+.line:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: -1px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: #00A0E3;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .line:hover:after { 
+    width: 100%; 
+    left: 0;
+  }
+
+  .main{
+    width: 1143.2px;
+    height: 648.6px;
+    background-color: #EEF4FD;
+    margin: 24px auto;
+    overflow: scroll;
+    /* position: sticky; */
+    padding: 18px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+  }
+  .main {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.main::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.chart{
+    width: 60%;
+    height: 50%;
+}
+
+  body{
+    overflow: hidden;
+  }
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user{
+    background-color: #00A0E3;
+    padding: 9px;
+    border-radius: 2px;
+    color: #EEF4FD;
+}
+
+.empty{
+    width: 0%;
+}
+.chartmain{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 60px;
+    flex-direction: column;
+    
+}
+.top{
+    display: flex;
+    justify-content: center;
+   
+    /* width: 40%; */
+}
+.rev{
+    background-color: #00A0E3;
+    color: white;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0E2947;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+.print {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    top: 220px;
+}
+
+.print button{
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00A0E3;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    
+}
+
+.chart-container{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+    #logo img {
+        margin-left: 0vh;
+        height: 110px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 12vh;
+        left: 0;
+        background-color: #eef4fdf5;
+        text-align: center;
+    }
+
+    .nav-list.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        width: 70%;
+        gap: 40px;
+        border-radius: 5px;
+        z-index: 1;
+        position: absolute;
+        left: 28%;
+        top: 56%;
+        border: 0.8px solid #0E2947;
+        padding: 20px 0px;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .dropdown-content a {
+        padding: 10px;
+    }
+
+    .logout {
+        margin-top: 10px;
+    }
+
+    .main{
+        width: 90%;
+    }
+    .user-info{
+        align-items: start;
+        width: 100%;
+    }
+    .chart-container{
+        width: 335px;
+    }
+    .chart{
+        width: 106%;
+    }
+    .chartmain{
+        top: 60px;
+    }
+}
